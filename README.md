@@ -12,9 +12,14 @@ A simple utility to automatically install .deb packages from urls
 Downloads and installs deb files from the provided urls
 
 positional arguments:
+
   URL          an http(s) url
 
 optional arguments:
+
+
   -h, --help   show this help message and exit
+
   --no-delete  Don't delete the deb file after installation
+
   --no-update  Skip apt-get update
