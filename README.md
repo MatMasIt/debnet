@@ -1,6 +1,6 @@
 # debnet
 
-![debnet](logohq.png | width=100)
+<img src="./logohq.png" width=300>
 
 A simple utility to automatically install .deb packages from urls
 ---
