@@ -1,0 +1,22 @@
+#!/bin/python3
+import os,sys,os.path,argparse
+from shutil import which
+parser = argparse.ArgumentParser(description='Downloads and install a deb file from one ore more urls')
+parser.add_argument('urls', metavar='URL', type=str, nargs='+',
+                    help='an http(s) url')
+parser.add_argument('--no-delete',action='store_true',help='Don\'t delete the deb file after installation')
+parser.add_argument('--no-update',action='store_true',help='Skip apt-get update')
+args = parser.parse_args()
+if which("wget") is None:
+    os.system("sudo apt-get update")
+    os.system("sudo apt-get install wget -y")
+for url in args.urls:
+    if not args.no_update:
+        os.system("sudo apt-get update")
+    os.system("wget "+str(url))
+    fName=str(url.split("/")[-1])
+    os.system("sudo dpkg -i "+fName)
+    os.system("sudo apt install -f")
+    if os.path.isfile(fName) and not args.no_delete:
+        os.remove(fName)
+        print(fName+" removed")
