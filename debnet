@@ -1,7 +1,7 @@
 #!/bin/python3
 import os,sys,os.path,argparse
 from shutil import which
-parser = argparse.ArgumentParser(description='Downloads and install a deb file from one ore more urls')
+parser = argparse.ArgumentParser(description='Downloads and installs deb files from the provided urls')
 parser.add_argument('urls', metavar='URL', type=str, nargs='+',
                     help='an http(s) url')
 parser.add_argument('--no-delete',action='store_true',help='Don\'t delete the deb file after installation')
