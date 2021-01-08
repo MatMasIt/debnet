@@ -1,5 +1,5 @@
 # debnet
-![debnet](logo.png)
+![debnet](logo.png =100x20)
 A simple utility to automatically install .deb packages from urls
 ---
 
