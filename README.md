@@ -1,7 +1,7 @@
-# debnet
-
+<p align="center">
+<h1>debnet</h1>
 <img src="./logohq.png" width=300>
-
+</p>
 A simple utility to automatically install .deb packages from urls
 ---
 
