@@ -1,7 +1,9 @@
 # debnet
 A simple utility to automatically install .deb packages from urls
+---
 
-usage: debnet \[-h] \[--no-delete] \[--no-update] URL \[URL ...]
+
+**usage**: debnet \[-h] \[--no-delete] \[--no-update] URL \[URL ...]
 
 Downloads and install a deb file from one ore more urls
 
