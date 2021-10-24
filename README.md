@@ -24,6 +24,8 @@ optional arguments:
 
   --no-update  Skip apt-get update
 
+You may use `man debnet` after installation
+
 ## Installation
 
 Run 
