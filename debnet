@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/python3
 import os,sys,os.path,argparse
 from shutil import which
 parser = argparse.ArgumentParser(description='Downloads and installs deb files from the provided urls')

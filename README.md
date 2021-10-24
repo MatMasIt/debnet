@@ -23,3 +23,11 @@ optional arguments:
   --no-delete  Don't delete the deb file after installation
 
   --no-update  Skip apt-get update
+
+## Installation
+
+Run 
+* `sudo make install` to install
+* `sudo make uninstall` to remove
+* `sudo make update` to update
+

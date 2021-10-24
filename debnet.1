@@ -1,0 +1,23 @@
+.TH ROPIPE 1 "24 October 2021"
+.SH NAME
+ropipe - A simple utility to automatically install .deb packages from urls
+.SH SYNOPSIS
+debnet [-h] [--no-delete] [--no-update] URL [URL ...]
+.SH DESCRIPTION
+Debnet allows simple download, installation and dependency-fixing of deb files
+.SS Options
+.TP
+-h, --help
+Show help Message and exit
+.TP
+--no-delete
+Don't delete deb files after installation
+.TP
+--no-update
+Skip apt-get update before installation
+.SH FILES
+.TP
+/usr/bin/debnet
+The program
+.SH BUGS
+Send bug reports to https://github.com/MatMasIt/debnet
