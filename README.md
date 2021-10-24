@@ -8,7 +8,7 @@ A simple utility to automatically install .deb packages from urls
 
 
 ```
-usage: debnet \[-h] \[--no-delete] \[--no-update] URL \[URL ...]
+usage: debnet [-h] [--no-delete] [--no-update] URL [URL ...]
 
 Downloads and installs deb files from the provided urls
 
