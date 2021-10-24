@@ -7,7 +7,8 @@ A simple utility to automatically install .deb packages from urls
 ---
 
 
-**usage**: debnet \[-h] \[--no-delete] \[--no-update] URL \[URL ...]
+```
+usage: debnet \[-h] \[--no-delete] \[--no-update] URL \[URL ...]
 
 Downloads and installs deb files from the provided urls
 
@@ -23,6 +24,7 @@ optional arguments:
   --no-delete  Don't delete the deb file after installation
 
   --no-update  Skip apt-get update
+```
 
 You may use `man debnet` after installation
 
